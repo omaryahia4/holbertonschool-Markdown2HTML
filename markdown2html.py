@@ -11,7 +11,6 @@ It supports headings, unordered lists, and paragraphs.
 
 from sys import stderr, argv
 import os
-import markdown
 
 
 if __name__ == '__main__':
