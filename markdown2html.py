@@ -23,17 +23,10 @@ if __name__ == '__main__':
         print("Missing " + argv[1], file=stderr)
         exit(1)
     else:
-        # Open input and output files
         src_file = open(argv[1], "r")
         dest_file = open(argv[2], "w")
-
-        # Convert Markdown to HTML
         hmtl = markdown.markdown(src_file.read())
-
-        # Write HTML content to output file
         dest_file.write(hmtl + '\n')
-
-        # Close files and exit
         src_file.close()
         dest_file.close()
         exit(0)
